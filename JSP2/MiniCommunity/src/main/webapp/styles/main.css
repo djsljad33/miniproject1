@@ -1,0 +1,102 @@
+@charset "EUC-KR";
+/* 전체 페이지 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffde7;
+}
+
+/* 레이아웃 그리드 */
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* 로고 */
+.logo {
+    grid-column: 1 / 3;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* 메뉴 리스트 */
+.menu {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-item {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 이미지 슬라이드 */
+.image-slider {
+    grid-column: 2 / 3;
+    background-color: #ccc;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 24px;
+    border: 1px solid #ccc;
+}
+
+/* 실시간 검색어 */
+.search-box {
+    grid-column: 1 / 2;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* 공지사항, 최근 게시글, Hot 게시글 */
+.board {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.board-item {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 하단 카피라이트 */
+.footer {
+    grid-column: 1 / 3;
+    text-align: center;
+    padding: 10px;
+    background-color: #fdd835;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+
+
